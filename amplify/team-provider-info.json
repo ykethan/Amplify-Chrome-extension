@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-testext-dev-132820-authRole",
+      "UnauthRoleArn": "arn:aws:iam::053649414724:role/amplify-testext-dev-132820-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::053649414724:role/amplify-testext-dev-132820-authRole",
+      "Region": "eu-west-1",
+      "DeploymentBucketName": "amplify-testext-dev-132820-deployment",
+      "UnauthRoleName": "amplify-testext-dev-132820-unauthRole",
+      "StackName": "amplify-testext-dev-132820",
+      "StackId": "arn:aws:cloudformation:eu-west-1:053649414724:stack/amplify-testext-dev-132820/4694ba60-e9b4-11ec-85b5-0a6cd9f64a5d",
+      "AmplifyAppId": "d3pfuc8gckoq5i"
+    },
+    "categories": {
+      "auth": {
+        "testext6dd035ba": {}
+      }
+    }
+  }
+}

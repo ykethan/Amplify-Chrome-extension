@@ -1,24 +1,29 @@
 import logo from './logo.svg';
 import './App.css';
 
-function getLogo() {
-  if (window.chrome) {
-    return window.chrome.runtime.getURL(logo);
-  }
 
-  return logo;
-}
+import { Amplify } from 'aws-amplify';
+
+import { withAuthenticator } from '@aws-amplify/ui-react';
+import '@aws-amplify/ui-react/styles.css';
+
+import { AmplifyS3Album } from '@aws-amplify/ui-react/legacy';
+
+import awsExports from './aws-exports';
+Amplify.configure(awsExports);
+
+
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={getLogo()} className="App-logo" alt="logo" />
-        <p>Hello, World!</p>
-        <p>I'm a Content Script in a Chrome Extension!</p>
+        <p>Hello</p>
+      <AmplifyS3Album />
       </header>
     </div>
   );
 }
 
-export default App;
+export default withAuthenticator(App);
