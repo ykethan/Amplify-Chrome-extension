@@ -1,13 +1,37 @@
 {
+  "function": {
+    "testext38f2f2ab38f2f2abPreSignup": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "testext702fbf01PreSignup": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
   "auth": {
-    "testext6dd035ba": {
+    "testext702fbf01": {
       "service": "Cognito",
       "providerPlugin": "awscloudformation",
-      "dependsOn": [],
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "testext702fbf01PreSignup",
+          "triggerProvider": "Cognito",
+          "attributes": [
+            "Arn",
+            "Name"
+          ]
+        }
+      ],
       "customAuth": false,
       "frontendAuthConfig": {
         "socialProviders": [],
-        "usernameAttributes": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
         "signupAttributes": [
           "EMAIL"
         ],
@@ -26,7 +50,7 @@
     }
   },
   "storage": {
-    "s349e21c3f": {
+    "s3b4a99285": {
       "service": "S3",
       "providerPlugin": "awscloudformation",
       "dependsOn": []

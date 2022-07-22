@@ -13,7 +13,11 @@
       "securityenhancementnotification": false,
       "showfieldauthnotification": false,
       "usesubusernamefordefaultidentityclaim": true,
-      "usefieldnameforprimarykeyconnectionfield": false
+      "usefieldnameforprimarykeyconnectionfield": false,
+      "enableautoindexquerynames": false,
+      "respectprimarykeyattributesonconnectionfield": false,
+      "shoulddeepmergedirectiveconfigdefaults": false,
+      "populateownerfieldforstaticgroupauth": false
     },
     "frontend-ios": {
       "enablexcodeintegration": true

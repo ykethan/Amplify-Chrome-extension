@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "React Content Script",
+  "name": "test amp extension",
   "version": "0.0.1",
   "content_scripts": [
     {

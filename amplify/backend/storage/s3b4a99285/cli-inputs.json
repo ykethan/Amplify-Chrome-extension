@@ -1,12 +1,13 @@
 {
-  "resourceName": "s349e21c3f",
-  "policyUUID": "49e21c3f",
-  "bucketName": "testext7e76b3a1337d49aea6025cab76734787",
+  "resourceName": "s3b4a99285",
+  "policyUUID": "b4a99285",
+  "bucketName": "testextbb882f89c5bd4531b64bc05aa0e9846d",
   "storageAccess": "auth",
   "guestAccess": [],
   "authAccess": [
     "CREATE_AND_UPDATE",
-    "READ"
+    "READ",
+    "DELETE"
   ],
   "triggerFunction": "NONE",
   "groupAccess": {}
