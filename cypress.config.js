@@ -13,13 +13,13 @@ module.exports = defineConfig({
 
   e2e: {
     setupNodeEvents(on, config) {
-      on('before:browser:launch', (browser, launchOptions) => {
-        // supply the absolute path to an unpacked extension's folder
-        // NOTE: extensions cannot be loaded in headless Chrome
-        launchOptions.extensions.push('C:/amptest/testext/build')
+      // on('before:browser:launch', (browser, launchOptions) => {
+      //   // supply the absolute path to an unpacked extension's folder
+      //   // NOTE: extensions cannot be loaded in headless Chrome
+      //   launchOptions.extensions.push('C:/amptest/testext/build')
     
-        return launchOptions
-      })
+      //   return launchOptions
+      // })
     },
   },
 });
