@@ -24,7 +24,7 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
-
+// cogito testing if using auth from aws amplify
 // import Amplify, { Auth } from 'aws-amplify'
 
 // Amplify.configure(Cypress.env('awsConfig'))

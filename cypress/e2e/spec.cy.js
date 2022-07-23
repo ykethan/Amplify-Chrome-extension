@@ -1,10 +1,3 @@
-// describe('Navigation', () => {
-//   it('cy.visit() - visit a remote url', () => {
-//     cy.visit('http://localhost:3000/')
-//     cy.wait(50000)
-//   })
-// })
-
 
 describe('Cognito', function () {
   beforeEach(function () {
@@ -36,7 +29,3 @@ describe('click for picture', function(){
   })
 
 })
-
-// .click().then(() => {
-//   attachFile('C:\appsamp\Amplify-Chrome-extension\public\logo512.png')
-// })
