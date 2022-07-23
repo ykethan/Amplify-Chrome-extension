@@ -15,10 +15,7 @@ describe('Cognito', function () {
     cy.get('input[name="username"]').type(Cypress.env('cognito_username')) 
     cy.get('input[name="password"]').type(Cypress.env('cognito_password'))
     cy.get('button[type="submit"]').click()
-    // cy.loginByCognitoApi(
-    //   Cypress.env('cognito_username'),
-    //   Cypress.env('cognito_password')
-    // )
+    
   })
 
 
@@ -26,3 +23,20 @@ describe('Cognito', function () {
     cy.contains('Hello').should('be.visible')
   })
 })
+
+
+describe('click for picture', function(){
+  this.beforeEach(function(){
+  cy.get('amplify-s3-album').shadow().find('div').find('amplify-picker').shadow().find('div').find('input').selectFile('public\\logo512.png')
+  // cy.get('amplify-s3-album').shadow().find('div').find('amplify-picker').shadow().find('div').find('input').selectFile('public\\logo192.png')
+  })
+  it('shows picture', function(){
+  
+    cy.get('amplify-s3-album').shadow().find('div').find('*[class^="album-container"]').find('div').find('div').find('amplify-s3-image').shadow().find('img').should('be.visible')
+  })
+
+})
+
+// .click().then(() => {
+//   attachFile('C:\appsamp\Amplify-Chrome-extension\public\logo512.png')
+// })
