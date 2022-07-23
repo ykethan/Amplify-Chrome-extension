@@ -1,25 +1,32 @@
 {
   "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-testext-dev-174200-authRole",
-      "UnauthRoleArn": "arn:aws:iam::053649414724:role/amplify-testext-dev-174200-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::053649414724:role/amplify-testext-dev-174200-authRole",
+      "AuthRoleName": "amplify-testext-dev-143910-authRole",
+      "UnauthRoleArn": "arn:aws:iam::053649414724:role/amplify-testext-dev-143910-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::053649414724:role/amplify-testext-dev-143910-authRole",
       "Region": "us-east-1",
-      "DeploymentBucketName": "amplify-testext-dev-174200-deployment",
-      "UnauthRoleName": "amplify-testext-dev-174200-unauthRole",
-      "StackName": "amplify-testext-dev-174200",
-      "StackId": "arn:aws:cloudformation:us-east-1:053649414724:stack/amplify-testext-dev-174200/705c2e70-0a0f-11ed-8db2-0eb7685d618f",
-      "AmplifyAppId": "ds8e3fa3yg7l8"
+      "DeploymentBucketName": "amplify-testext-dev-143910-deployment",
+      "UnauthRoleName": "amplify-testext-dev-143910-unauthRole",
+      "StackName": "amplify-testext-dev-143910",
+      "StackId": "arn:aws:cloudformation:us-east-1:053649414724:stack/amplify-testext-dev-143910/f901c0a0-0087-11ed-9e6c-0ecf7e927879",
+      "AmplifyAppId": "d3owedo5hycuj0",
+      "AuthTriggerTemplateURL": "https://s3.amazonaws.com/amplify-testext-dev-143910-deployment/amplify-cfn-templates/auth/auth-trigger-cloudformation-template.json"
     },
     "categories": {
+      "function": {
+        "testext38f2f2ab38f2f2abPreSignup": {
+          "DOMAINALLOWLIST": "amazon.com",
+          "deploymentBucketName": "amplify-testext-dev-143910-deployment",
+          "s3Key": "amplify-builds/testext38f2f2ab38f2f2abPreSignup-436d4a61764367344750-build.zip"
+        },
+        "testext702fbf01PreSignup": {
+          "DOMAINALLOWLIST": "amazon.com",
+          "deploymentBucketName": "amplify-testext-dev-143910-deployment",
+          "s3Key": "amplify-builds/testext702fbf01PreSignup-5341336a516356625947-build.zip"
+        }
+      },
       "auth": {
         "testext702fbf01": {}
-      },
-      "function": {
-        "testext38f2f2ab38f2f2abPreSignup": {},
-        "testext702fbf01PreSignup": {
-          "DOMAINALLOWLIST": "amazon.com"
-        }
       }
     }
   }
