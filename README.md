@@ -35,3 +35,13 @@ Please refer to the instruction at [Amplify documentation]("https://docs.amplify
 
 
 ![image](https://user-images.githubusercontent.com/87995712/190833857-942ee458-4af5-474e-93a4-d5f7c8b36ca1.png)
+
+## Cleanup resources
+
+You can delete your Amplify application if you aren’t going to use it anymore. Run the following command in the terminal at the root of the project.
+
+`amplify delete`
+
+Note that this action can’t be undone. Once the project is deleted, you can’t recover it. If you need it again, then you must re-deploy it.
+Delete the extension from the Chrome browser.
+
